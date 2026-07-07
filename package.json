@@ -1,0 +1,40 @@
+{
+  "name": "@quicore/mysql",
+  "version": "1.1.0",
+  "description": "Production-grade MySQL connection pool helper for Node.js services. Wraps mysql2/promise with parameterized queries, transactions, structured errors, and metrics.",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "prepare": "npm run build",
+    "test": "node --test test/*.mjs"
+  },
+  "peerDependencies": {
+    "mysql2": ">=3.22.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0"
+  },
+  "keywords": [
+    "fhir",
+    "r4",
+    "storage",
+    "mongodb",
+    "healthcare",
+    "interoperability",
+    "repository",
+    "hl7"
+  ],
+  "license": "MIT"
+}
